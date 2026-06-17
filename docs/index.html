@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World Cup 2026 - ตารางคะแนน 7 ทีมเลือก</title>
+<style>
+  :root {
+    --bg: #0f0f10; --card: #18181a; --card-hover: #1f1f22;
+    --border: rgba(255,255,255,0.08); --text: #f2f2f0; --text-secondary: #9a9a96;
+    --gold: #d4af37; --green: #5dcaa5; --red: #e08a7d;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Thai", sans-serif; padding: 24px 16px 60px; min-height: 100vh; }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  .header { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+  .trophy { font-size: 30px; }
+  h1 { font-size: 18px; font-weight: 600; color: var(--gold); letter-spacing: 0.3px; }
+  .sub { font-size: 12px; color: var(--text-secondary); margin-top: 4px; }
+  .status-bar { font-size: 12px; color: var(--text-secondary); margin: 14px 0 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 8px; }
+  .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
+  table { width: 100%; border-collapse: collapse; }
+  th { font-size: 11px; font-weight: 500; color: var(--text-secondary); text-align: center; padding: 8px 6px; border-bottom: 1px solid var(--border); text-transform: uppercase; letter-spacing: 0.04em; }
+  th.left { text-align: left; }
+  td { padding: 12px 6px; text-align: center; border-bottom: 1px solid var(--border); font-size: 14px; }
+  td.left { text-align: left; }
+  tr.team-row:hover td { background: var(--card-hover); }
+  .team-cell { display: flex; align-items: center; gap: 10px; }
+  .flag { font-size: 19px; }
+  .tname { font-weight: 500; }
+  .group-pill { font-size: 10px; background: var(--card); border: 1px solid var(--border); color: var(--text-secondary); padding: 2px 7px; border-radius: 999px; }
+  .pts { font-weight: 700; color: var(--gold); font-size: 15px; }
+  .gd-pos { color: var(--green); }
+  .gd-neg { color: var(--red); }
+  .gd-neu { color: var(--text-secondary); }
+  .rank { font-weight: 600; color: var(--text-secondary); width: 26px; }
+  .matches-section { margin-top: 32px; }
+  .section-title { font-size: 12px; font-weight: 600; color: var(--gold); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; }
+  .match-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; margin-bottom: 8px; }
+  .match-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .match-team { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; flex: 1; min-width: 0; }
+  .match-team.right { flex-direction: row-reverse; text-align: right; }
+  .score-box { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 5px 14px; font-size: 15px; font-weight: 600; color: var(--gold); min-width: 56px; text-align: center; flex-shrink: 0; }
+  .match-meta { font-size: 11px; color: var(--text-secondary); margin-top: 8px; text-align: center; }
+  .empty-state { text-align: center; padding: 40px 20px; color: var(--text-secondary); font-size: 13px; }
+  .footer-note { margin-top: 28px; font-size: 11px; color: var(--text-secondary); text-align: center; line-height: 1.6; }
+  .footer-note a { color: var(--gold); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <div class="trophy">🏆</div>
+    <div>
+      <h1>WORLD CUP 2026 — ตารางคะแนน</h1>
+      <div class="sub">7 ทีมที่เลือก: ฝรั่งเศส เยอรมัน ญี่ปุ่น สเปน อาร์เจนติน่า เนเธอร์แลนด์ โปรตุเกส</div>
+    </div>
+  </div>
+
+  <div class="status-bar">
+    <span class="status-dot"></span>
+    <span>อัปเดตล่าสุด: 17 Jun 2026, 15:00 (เวลาไทย) · ข้อมูลอัปเดตอัตโนมัติทุกวันผ่าน GitHub Actions</span>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="left" style="width:26px;">#</th>
+        <th class="left">ทีม</th>
+        <th>กลุ่ม</th><th>แข่ง</th><th>ชนะ</th><th>เสมอ</th><th>แพ้</th><th>GD</th><th>คะแนน</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="team-row">
+          <td class="rank">1</td>
+          <td class="left"><div class="team-cell"><span class="flag">🇩🇪</span><span class="tname">เยอรมัน</span></div></td>
+          <td><span class="group-pill">E</span></td>
+          <td>1</td><td>1</td><td>0</td><td>0</td>
+          <td class="gd-pos">+6</td>
+          <td class="pts">3</td>
+        </tr>
+        <tr class="team-row">
+          <td class="rank">2</td>
+          <td class="left"><div class="team-cell"><span class="flag">🇦🇷</span><span class="tname">อาร์เจนติน่า</span></div></td>
+          <td><span class="group-pill">J</span></td>
+          <td>1</td><td>1</td><td>0</td><td>0</td>
+          <td class="gd-pos">+3</td>
+          <td class="pts">3</td>
+        </tr>
+        <tr class="team-row">
+          <td class="rank">3</td>
+          <td class="left"><div class="team-cell"><span class="flag">🇫🇷</span><span class="tname">ฝรั่งเศส</span></div></td>
+          <td><span class="group-pill">I</span></td>
+          <td>1</td><td>1</td><td>0</td><td>0</td>
+          <td class="gd-pos">+2</td>
+          <td class="pts">3</td>
+        </tr>
+        <tr class="team-row">
+          <td class="rank">4</td>
+          <td class="left"><div class="team-cell"><span class="flag">🇳🇱</span><span class="tname">เนเธอร์แลนด์</span></div></td>
+          <td><span class="group-pill">F</span></td>
+          <td>1</td><td>0</td><td>1</td><td>0</td>
+          <td class="gd-neu">0</td>
+          <td class="pts">1</td>
+        </tr>
+        <tr class="team-row">
+          <td class="rank">5</td>
+          <td class="left"><div class="team-cell"><span class="flag">🇯🇵</span><span class="tname">ญี่ปุ่น</span></div></td>
+          <td><span class="group-pill">F</span></td>
+          <td>1</td><td>0</td><td>1</td><td>0</td>
+          <td class="gd-neu">0</td>
+          <td class="pts">1</td>
+        </tr>
+        <tr class="team-row">
+          <td class="rank">6</td>
+          <td class="left"><div class="team-cell"><span class="flag">🇪🇸</span><span class="tname">สเปน</span></div></td>
+          <td><span class="group-pill">H</span></td>
+          <td>1</td><td>0</td><td>1</td><td>0</td>
+          <td class="gd-neu">0</td>
+          <td class="pts">1</td>
+        </tr>
+        <tr class="team-row">
+          <td class="rank">7</td>
+          <td class="left"><div class="team-cell"><span class="flag">🇵🇹</span><span class="tname">โปรตุเกส</span></div></td>
+          <td><span class="group-pill">-</span></td>
+          <td>0</td><td>0</td><td>0</td><td>0</td>
+          <td class="gd-neu">—</td>
+          <td class="pts">0</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <div class="matches-section">
+    <div class="section-title">ผลการแข่งขันล่าสุด</div>
+    
+        <div class="match-card">
+          <div class="match-row">
+            <div class="match-team">🇫🇷 <span>ฝรั่งเศส</span></div>
+            <div class="score-box">3 – 1</div>
+            <div class="match-team right">Senegal <span></span></div>
+          </div>
+          <div class="match-meta">2026-06-16 · Group I · New York/New Jersey (East Rutherford)</div>
+        </div>
+        <div class="match-card">
+          <div class="match-row">
+            <div class="match-team">🇦🇷 <span>อาร์เจนติน่า</span></div>
+            <div class="score-box">3 – 0</div>
+            <div class="match-team right">Algeria <span></span></div>
+          </div>
+          <div class="match-meta">2026-06-16 · Group J · Kansas City</div>
+        </div>
+        <div class="match-card">
+          <div class="match-row">
+            <div class="match-team">🇪🇸 <span>สเปน</span></div>
+            <div class="score-box">0 – 0</div>
+            <div class="match-team right">Cape Verde <span></span></div>
+          </div>
+          <div class="match-meta">2026-06-15 · Group H · Atlanta</div>
+        </div>
+        <div class="match-card">
+          <div class="match-row">
+            <div class="match-team">🇩🇪 <span>เยอรมัน</span></div>
+            <div class="score-box">7 – 1</div>
+            <div class="match-team right">Curaçao <span></span></div>
+          </div>
+          <div class="match-meta">2026-06-14 · Group E · Houston</div>
+        </div>
+        <div class="match-card">
+          <div class="match-row">
+            <div class="match-team">🇳🇱 <span>เนเธอร์แลนด์</span></div>
+            <div class="score-box">2 – 2</div>
+            <div class="match-team right">ญี่ปุ่น <span>🇯🇵</span></div>
+          </div>
+          <div class="match-meta">2026-06-14 · Group F · Dallas (Arlington)</div>
+        </div>
+  </div>
+
+  <div class="footer-note">
+    ข้อมูลจาก <a href="https://github.com/openfootball/worldcup.json" target="_blank">openfootball/worldcup.json</a> (public domain)<br>
+    Build อัตโนมัติทุกวันผ่าน GitHub Actions · โฮสต์ฟรีบน GitHub Pages
+  </div>
+</div>
+</body>
+</html>

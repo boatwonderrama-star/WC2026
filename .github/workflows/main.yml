@@ -2,7 +2,7 @@ name: Update World Cup Table
 
 on:
   schedule:
-    - cron: '0 0 * * *' # รันอัตโนมัติทุกวันเวลา 07:00 น. เวลาไทย
+    - cron: '30 1 * * *' # รันอัตโนมัติทุกวันเวลา 07:00 น. เวลาไทย
   workflow_dispatch:   # เปิดสวิตช์ให้กดรันเองด้วยมือได้
 
 permissions:
